@@ -70,9 +70,6 @@ def load_img(file_path, slice_, color, resize):
 # Define a route for the home page
 @app.route('/', methods=['GET', 'POST'])
 
-@app.route('/')
-def index():
-    return 'Flask app is running!'
 def home():
     if request.method == 'POST':
         # Check if the request contains a file
